@@ -1,16 +1,12 @@
-import React from 'react'
+export default function UserProfile({params}: any) {
+    return (
+        <div className="flex flex-col items-center justify-center min-h-screen py-2">
+            <h1>Profile</h1>
+            <hr />
+            <p className="text-4xl">Profile page 
+            <span className=" p-2 ml-2 rounded bg-orange-500 text-black">{params.id}</span>
+            </p>
 
-const userProfile = ({params}:any) => {
-  return (
-    <div className=' text-2xl min-h-screen flex items-center justify-center py-2 '>
-      <h1>Profile</h1>
-      <br/>
-
-      <p className='text-4xl'>This is the profile <span className='ml-4 p-2 rounded bg-orange-500 text-black'>{params.id}</span></p>
-      
-    </div>
-  )
+            </div>
+    )
 }
-
-export default userProfile;
-
